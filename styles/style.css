@@ -1,0 +1,79 @@
+body {
+	margin: 0;
+	background-color: #edeef0;
+}
+
+.container {
+	border-radius: 5px;	
+}
+
+.mcontainer {
+	background: white;
+	padding: 10px;
+	margin-top: 5px;
+	border-radius: 5px;
+}
+.mcontainer1 {
+	background: white;
+	padding: 10px;
+	margin-top: 5px;
+	margin-left: 15px;
+	border-radius: 5px;
+	float: left;
+}
+.mcontainer::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.mcontainer1::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.headlines {
+	background: white;
+	padding: 10px;
+	margin-top: 5px;
+	
+}
+.topFeature {
+	background: white;
+	padding: 10px;
+	margin-top: 5px;
+	border-radius: 5px;
+}
+.randomCalc {
+	background: white;
+	padding: 10px;
+	margin-top: 5px;
+	border-radius: 5px;
+}
+.badge {
+	padding-left: 0;
+}
+.team {
+	float: left;
+	clear: right;
+}
+.score {
+	float: right;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+.feature_image {
+	display: none;
+}
+#foot {
+	float: bottom;
+}
+.emptySpan {
+	position:absolute; 
+	width:100%;
+	height:100%;
+	top:0;
+	left: 0;
+}

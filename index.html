@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Cricket information</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<link href="styles/style.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<head>
+			<div class="container-fluid">
+				<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+				  <a class="navbar-brand" href="index.html">RESPN Cricinfo</a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+
+				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				    <ul class="navbar-nav mr-auto">
+				      <li class="nav-item active">
+				        <a class="nav-link" href="index.html">Live Scores <span class="sr-only">(current)</span></a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="series.html">Series</a>
+				      </li>
+				      <li class="nav-item dropdown">
+				        <a class="nav-link dropdown-toggle" href="teams.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				          Teams
+				        </a>
+				        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				          <a class="dropdown-item" href="teams.html">Australia</a>
+				          <div class="dropdown-divider"></div>
+				          <a class="dropdown-item" href="teams.html">England</a>
+				   			<div class="dropdown-divider"></div>
+				          <a class="dropdown-item" href="teams.html">Pakistan</a>
+				        </div>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="stats.html">Stats</a>
+				      </li>
+				    </ul>
+				  </div>
+				</nav>
+			</div>
+		</head>
+		<div class = "container">
+		<div class="row">
+			<div class="container col-md-8">
+				<div class="mcontainer">
+					<a class="match" href="series.html">Pak Vs England</a>
+					<div class="dropdown-divider"></div>
+					<span class="badge badge-light">Live</span>
+					<p>2nd Test match</p>
+					<h4 class="team">Pak</h4>
+					<h4 class="score">255/5</h4>
+					<img src="images/pak.jpg" alt="Pak">
+				</div>
+				<div class="mcontainer">
+					<a class="match" href="series.html">IND Vs SA</a>
+					<div class="dropdown-divider"></div>
+					<span class="badge badge-light">Stumps Day 2</span>
+					<p>3rd Test match</p>
+					<h4 class="team">IND</h4>
+					<h4 class="score">355</h4<br>
+					<h4 class="team">SA</h4>
+					<h4 class="score">168/3</h4>
+					<img src="images/ind.jpg" alt="Ind", width=700px;>
+				</div>
+			</div>
+			<div class="container col-md-4">
+				<div class="headlines">
+					<h4>Top headlines</h4>
+					<div></div>
+					<ul>
+						<li><a class="match" href="series.html">Very interesting news number 1</a></li>
+						<li><a class="match" href="series.html">Very interesting news number 2</a></li>
+						<li><a class="match" href="series.html">Slightly interesting news number 3</a></li>
+					</ul>
+				</div>
+				<div class="randomCalc">
+					<button id="randCalc" type="button" class="btn btn-outline-info">Get to random calculator</button>
+				</div>
+				<div class="topFeature">
+					<a href="#"><h4>How much do cricketers get paid?</h4></a>
+					<div></div>
+					<p>As it turns out, not that much. It really depends on what country you play for. Cricekts from Australia, England, and India get paid a lot more than cricketers from Bangladesh, West Indies.</p>
+					<img class = "feature_image" src="images/sad.jpg">
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class = "mcontainer1">
+					<p>Random Calculator</p>
+					<input id="num1">
+					<input id="num2"><br>
+					<select id="funct">
+					  <option value="add">Add</option>
+					  <option value="subtract">Subtract</option>
+					  <option value="multiply">Mutiply</option>
+					  <option value="divide">Divide</option>
+					</select>
+					<p id="ans">0</p>
+				</div>
+			</div>
+		</div>
+		<div id = "foot" class="container">
+			<footer>@ Copyright.Footer.com</footer>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+		<script src="scripts/script.js"></script>
+		
+	</body>
+</html>
