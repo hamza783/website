@@ -31,24 +31,13 @@ body {
     clear: both;
     display: table;
 }
-.headlines {
+.sidePanels {
 	background: white;
 	padding: 10px;
-	margin-top: 5px;
-	
-}
-.topFeature {
-	background: white;
-	padding: 10px;
-	margin-top: 5px;
+	margin: 5px;
 	border-radius: 5px;
 }
-.randomCalc {
-	background: white;
-	padding: 10px;
-	margin-top: 5px;
-	border-radius: 5px;
-}
+
 .badge {
 	padding-left: 0;
 }
@@ -76,4 +65,27 @@ img {
 	height:100%;
 	top:0;
 	left: 0;
+}
+.head {
+	color: white;
+	padding: 2px;
+	background-color: #4d4dff;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+.rest {
+	background-color: white;
+	padding: 1px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.panelButton {
+	background-color: #4d4dff;
+	border: none;
+
 }

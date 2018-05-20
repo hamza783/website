@@ -67,7 +67,7 @@
 				</div>
 			</div>
 			<div class="container col-md-4">
-				<div class="headlines">
+				<div class="sidePanels">
 					<h4>Top headlines</h4>
 					<div></div>
 					<ul>
@@ -76,14 +76,30 @@
 						<li><a class="match" href="series.html">Slightly interesting news number 3</a></li>
 					</ul>
 				</div>
-				<div class="randomCalc">
+				<div class="sidePanels">
 					<button id="randCalc" type="button" class="btn btn-outline-info">Get to random calculator</button>
 				</div>
-				<div class="topFeature">
+				<div class="topFeature sidePanels">
 					<a href="#"><h4>How much do cricketers get paid?</h4></a>
 					<div></div>
 					<p>As it turns out, not that much. It really depends on what country you play for. Cricekts from Australia, England, and India get paid a lot more than cricketers from Bangladesh, West Indies.</p>
 					<img class = "feature_image" src="images/sad.jpg">
+				</div>
+				<div id="panel1">
+					<div class="head">
+						<button id="p1" data-panel="rest1" type="button" class="panelButton btn btn-primary btn-lg btn-block pbutton">Hide panel</button>
+					</div>
+					<div class="rest rest1">
+						<p>Click button for panel 1 to hide the text. Click it again to show it.</p>
+					</div>
+				</div>
+				<div id="panel2">
+					<div class="head">
+						<button id="p2" data-panel="rest2" type="button" class="panelButton btn btn-primary btn-lg btn-block pbutton">Hide panel</button>
+					</div>
+					<div class="rest rest2">
+						<p>Click button for panel 2 to hide the text. Click it again to show it.</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -112,6 +128,22 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 		<script src="scripts/script.js"></script>
+		<script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
+		<script>
+			$(function() {
+				$('.pbutton').on('click', function() {
+					var panelId = $(this).attr('data-panel');
+					panelId = '.'+panelId;
+					var isVisible = $(panelId).is( ":visible" );
+					$(panelId).slideToggle();
+					if(isVisible) {
+						$(this).html('Show Panel');
+					}
+					else
+						$(this).html('Hide Panel');
+				});
+			});
+		</script>
 		
 	</body>
 </html>
